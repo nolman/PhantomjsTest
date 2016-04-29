@@ -11,7 +11,7 @@ html
   body
     h1 hi
     = javascript_include_tag 'first'
-    = javascript_include_tag 'second'
+    script src='/slow.js'
     = javascript_include_tag 'third'
     javascript:
       window.forth = {forth: true};
