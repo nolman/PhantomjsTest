@@ -1,2 +1,2 @@
 window.first = {first: true};
-console.log("window first", first)
+console.log("window firstzzzzzzzsfsdfsdf", first)
