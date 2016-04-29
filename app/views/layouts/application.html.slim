@@ -6,11 +6,15 @@ html
     meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'
     meta name='description' content='Opendoor makes you a free offer on your home today, so you can sell on your schedule.'
     meta name='fragment' content='!'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Roboto:400,500,600,700|Material+Icons', media: 'all'
+    = stylesheet_link_tag 'https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css'
     title Hi
     = stylesheet_link_tag 'application', media: 'all'
   body
     h1 hi
+    script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC5irIeYUiMC70N9ci0no2WIammmJrKq7I&v=3&libraries=places'
     = javascript_include_tag 'first'
+    = javascript_include_tag 'https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'
     script src='/slow.js'
     = javascript_include_tag 'third'
     javascript:
