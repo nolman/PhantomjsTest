@@ -1,0 +1,9 @@
+general:
+  artifacts:
+    - tmp/capybara
+machine:
+  node:
+    version: 4.4.3
+dependencies:
+  pre:
+    - if [ `phantomjs -v` != '2.1.1' ]; then curl --output ~/bin/phantomjs https://circle-downloads.s3.amazonaws.com/phantomjs-2.1.1; chmod +x ~/bin/phantomjs; fi
